@@ -1,4 +1,4 @@
-import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/common';
+import { Controller, Get, Post, Body, Patch, Param, Delete, Put } from '@nestjs/common';
 import { CategoriaService } from './categoria.service';
 import { Categoria } from './entities/categoria.entity';
 
@@ -20,11 +20,15 @@ export class CategoriaController {
   findById(@Param('id') id: string) {
     return this.categoriaService.findById(Number(id));
   }
+  @Get('/nome/:nome')
+  findByNome(@Param('nome') nome: string) {
+  return this.categoriaService.findByNome(nome);
+}
 
-  @Patch(':id')
-  update(@Param('id') id: string, @Body() categoria: Categoria) {
-    return this.categoriaService.update((categoria));
-  }
+  @Put()
+  update(@Body() categoria: Categoria) {
+  return this.categoriaService.update(categoria);
+}
 
   @Delete(':id')
   remove(@Param('id') id: string) {
