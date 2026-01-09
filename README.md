@@ -1,98 +1,142 @@
+<p align="center" style="font-size:32px;">
+  <strong>🚀 Projeto Final — Bloco 02</strong>
+</p>
+
 <p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
+  <strong>Bootcamp JavaScript | Generation Brasil</strong>
 </p>
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+<hr/>
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg" alt="Donate us"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow" alt="Follow us on Twitter"></a>
+<p>
+Projeto desenvolvido no <strong>Bloco 02</strong> do Bootcamp de JavaScript da <strong>Generation Brasil</strong>, com foco na criação de uma <strong>API REST</strong> utilizando <strong>NestJS</strong>, aplicando conceitos de <strong>CRUD</strong>, <strong>arquitetura em camadas</strong> e <strong>relacionamento entre entidades</strong>.
 </p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
-## Description
+<p>
+O sistema simula o gerenciamento de <strong>Produtos</strong> e <strong>Categorias</strong>, permitindo operações completas de criação, leitura, atualização e exclusão.
+</p>
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+<hr/>
 
-## Project setup
+<p>
+<strong>📌 Sobre o Projeto</strong>
+</p>
 
-```bash
-$ npm install
-```
+<p>
+A aplicação foi desenvolvida seguindo o padrão arquitetural do NestJS, com separação clara de responsabilidades entre <strong>controllers</strong>, <strong>services</strong>, <strong>entities</strong> e <strong>modules</strong>.
+</p>
 
-## Compile and run the project
+<p>
+O projeto implementa relacionamento entre entidades, garantindo organização, escalabilidade e boas práticas no desenvolvimento de APIs.
+</p>
 
-```bash
-# development
-$ npm run start
+<hr/>
 
-# watch mode
-$ npm run start:dev
+<p>
+<strong>📁 Estrutura de Pastas</strong>
+</p>
 
-# production mode
-$ npm run start:prod
-```
+<ul>
+  <li><strong>src</strong> – Diretório principal da aplicação</li>
+  <li><strong>categoria</strong> – CRUD completo da entidade Categoria</li>
+  <li><strong>produto</strong> – CRUD completo da entidade Produto</li>
+  <li><strong>entities</strong> – Definição das entidades e relacionamentos</li>
+  <li><strong>service</strong> – Regras de negócio da aplicação</li>
+  <li><strong>test</strong> – Testes iniciais do projeto</li>
+</ul>
 
-## Run tests
+<hr/>
 
-```bash
-# unit tests
-$ npm run test
+<p>
+<strong>📄 Arquivos Principais</strong>
+</p>
 
-# e2e tests
-$ npm run test:e2e
+<ul>
+  <li><strong>app.module.ts</strong> – Módulo principal da aplicação</li>
+  <li><strong>app.controller.ts</strong> – Controller principal</li>
+  <li><strong>app.service.ts</strong> – Service principal</li>
+  <li><strong>main.ts</strong> – Arquivo de inicialização da aplicação</li>
+  <li><strong>package.json</strong> – Dependências e scripts do projeto</li>
+  <li><strong>tsconfig.json</strong> – Configurações do TypeScript</li>
+  <li><strong>eslint.config.mjs</strong> – Padronização e qualidade de código</li>
+  <li><strong>.prettierrc</strong> – Formatação automática do código</li>
+</ul>
 
-# test coverage
-$ npm run test:cov
-```
+<hr/>
 
-## Deployment
+<p>
+<strong>⚙️ Funcionalidades Implementadas</strong>
+</p>
 
-When you're ready to deploy your NestJS application to production, there are some key steps you can take to ensure it runs as efficiently as possible. Check out the [deployment documentation](https://docs.nestjs.com/deployment) for more information.
+<ul>
+  <li>CRUD completo de Categorias</li>
+  <li>CRUD completo de Produtos</li>
+  <li>Relacionamento entre Produto e Categoria</li>
+  <li>Organização em módulos</li>
+  <li>Boas práticas com NestJS</li>
+</ul>
 
-If you are looking for a cloud-based platform to deploy your NestJS application, check out [Mau](https://mau.nestjs.com), our official platform for deploying NestJS applications on AWS. Mau makes deployment straightforward and fast, requiring just a few simple steps:
+<hr/>
 
-```bash
-$ npm install -g @nestjs/mau
-$ mau deploy
-```
+<p>
+<strong>🛠️ Tecnologias Utilizadas</strong>
+</p>
 
-With Mau, you can deploy your application in just a few clicks, allowing you to focus on building features rather than managing infrastructure.
+<ul>
+  <li>Node.js</li>
+  <li>TypeScript</li>
+  <li>NestJS</li>
+  <li>npm</li>
+</ul>
 
-## Resources
+<hr/>
 
-Check out a few resources that may come in handy when working with NestJS:
+<p>
+<strong>▶️ Como Executar o Projeto</strong>
+</p>
 
-- Visit the [NestJS Documentation](https://docs.nestjs.com) to learn more about the framework.
-- For questions and support, please visit our [Discord channel](https://discord.gg/G7Qnnhy).
-- To dive deeper and get more hands-on experience, check out our official video [courses](https://courses.nestjs.com/).
-- Deploy your application to AWS with the help of [NestJS Mau](https://mau.nestjs.com) in just a few clicks.
-- Visualize your application graph and interact with the NestJS application in real-time using [NestJS Devtools](https://devtools.nestjs.com).
-- Need help with your project (part-time to full-time)? Check out our official [enterprise support](https://enterprise.nestjs.com).
-- To stay in the loop and get updates, follow us on [X](https://x.com/nestframework) and [LinkedIn](https://linkedin.com/company/nestjs).
-- Looking for a job, or have a job to offer? Check out our official [Jobs board](https://jobs.nestjs.com).
+<p>
+Clone o repositório:
+</p>
 
-## Support
+<p>
+git clone https://github.com/aliun1/projeto_final_bloco02.git
+</p>
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+<p>
+Acesse a pasta do projeto:
+</p>
 
-## Stay in touch
+<p>
+cd projeto_final_bloco02
+</p>
 
-- Author - [Kamil Myśliwiec](https://twitter.com/kammysliwiec)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+<p>
+Instale as dependências:
+</p>
 
-## License
+<p>
+npm install
+</p>
 
-Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
+<p>
+Execute a aplicação:
+</p>
+
+<p>
+npm run start:dev
+</p>
+
+<hr/>
+
+<p>
+<strong>🎯 Objetivos de Aprendizagem</strong>
+</p>
+
+<ul>
+  <li>Desenvolvimento de API REST com NestJS</li>
+  <li>Implementação de CRUD</li>
+  <li>Relacionamento entre entidades</li>
+  <li>Arquitetura em camadas</li>
+  <li>Boas práticas no desenvolvimento backend</li>
+</ul>
